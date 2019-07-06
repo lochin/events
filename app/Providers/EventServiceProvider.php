@@ -26,6 +26,10 @@ class EventServiceProvider extends ServiceProvider
         Lockout::class => [
             UserLockoutListener::class,
         ],
+
+        'App\Events\PrinterKnocked' => [
+            'App\Listeners\PrinterKnockedListener',
+        ],
     ];
 
     /**
